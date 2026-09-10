@@ -1,1475 +1,874 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRTRAIlumina | Iluminación inteligente</title>
 
-  <title>IRTRAIlumina — Sistema Inteligente de Iluminación</title>
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap"
-    rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
 
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
 
-  <!-- =====================================================
-       NAVBAR
-       ===================================================== -->
+            <a href="#inicio" class="logo">
+                IRTRA<span>Ilumina</span>
+            </a>
 
-  <nav class="navbar">
-
-    <div class="navbar__inner">
-
-      <a href="#inicio" class="brand">
-
-        <span class="brand__mark">
-          IRTRA<span>Ilumina</span>
-        </span>
-
-      </a>
-
-
-      <div class="nav-links">
-
-        <a href="#inicio">
-          Inicio
-        </a>
-
-        <a href="#funcionamiento">
-          Funcionamiento
-        </a>
-
-        <a href="#componentes">
-          Componentes
-        </a>
-
-        <a href="#simulacion">
-          Simulación
-        </a>
-
-        <a href="#ods">
-          ODS
-        </a>
-
-        <a href="#equipo">
-          Equipo
-        </a>
-
-      </div>
-
-    </div>
-
-  </nav>
-
-
-
-  <!-- =====================================================
-       HERO
-       ===================================================== -->
-
-  <header class="hero" id="inicio">
-
-    <div class="hero__grid"></div>
-
-    <div class="hero__glow"></div>
-
-    <div class="hero__inner">
-
-
-      <div class="hero__content">
-
-        <p class="eyebrow">
-          PROYECTO DE AUTOMATIZACIÓN · IRTRA PETAPA
-        </p>
-
-
-        <h1 class="hero__title">
-
-          IRTRA
-          <span>Ilumina.</span>
-
-        </h1>
-
-
-        <p class="hero__lede">
-
-          Un sistema inteligente de iluminación que responde
-          automáticamente a las condiciones del entorno y
-          permite activar una alerta mediante un botón.
-
-        </p>
-
-
-        <div class="hero__cta">
-
-          <a
-            href="#funcionamiento"
-            class="btn btn--primary">
-
-            Conocer el sistema →
-            
-          </a>
-
-
-          <a
-            href="#simulacion"
-            class="btn btn--ghost">
-
-            Ver simulación
-
-          </a>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#funcionamiento">Funcionamiento</a>
+                <a href="#componentes">Componentes</a>
+                <a href="#simulacion">Sistema en acción</a>
+                <a href="#ods">ODS</a>
+                <a href="#equipo">Equipo</a>
+            </nav>
 
         </div>
+    </header>
 
 
-        <!-- Indicadores -->
+    <!-- HERO -->
+    <main>
 
-        <div class="hero__stats">
+        <section class="hero" id="inicio">
 
-          <div class="stat">
+            <div class="hero-content">
 
-            <strong>
-              01
-            </strong>
+                <div class="hero-tag">
+                    PROYECTO TECNOLÓGICO
+                </div>
 
-            <span>
-              Fotoresistencia
-            </span>
+                <h1>
+                    IRTRA<span>Ilumina.</span>
+                </h1>
 
-          </div>
+                <p class="hero-description">
+                    Un sistema de iluminación inteligente diseñado para
+                    responder automáticamente a las condiciones del entorno
+                    y a la presencia de personas.
+                </p>
 
+                <div class="hero-buttons">
+                    <a href="#funcionamiento" class="btn btn-primary">
+                        Conocer el proyecto
+                    </a>
 
-          <div class="stat">
+                    <a href="#simulacion" class="btn btn-secondary">
+                        Ver sistema
+                    </a>
+                </div>
 
-            <strong>
-              02
-            </strong>
+                <div class="hero-stats">
 
-            <span>
-              Sensor PIR
-            </span>
+                    <div class="stat">
+                        <strong>3</strong>
+                        <span>Sensores y controles</span>
+                    </div>
 
-          </div>
+                    <div class="stat">
+                        <strong>RGB</strong>
+                        <span>Iluminación</span>
+                    </div>
 
+                    <div class="stat">
+                        <strong>1</strong>
+                        <span>Sistema integrado</span>
+                    </div>
 
-          <div class="stat">
-
-            <strong>
-              03
-            </strong>
-
-            <span>
-              Botón de alerta
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Representación visual del sistema -->
-
-      <div class="hero-system">
-
-        <div class="system-orbit orbit-one"></div>
-
-        <div class="system-orbit orbit-two"></div>
-
-
-        <div class="system-core">
-
-          <div class="rgb-light">
-
-            <div class="rgb-light__inner"></div>
-
-          </div>
-
-
-          <span>
-            RGB
-          </span>
-
-          <small>
-            ILUMINACIÓN
-          </small>
-
-        </div>
-
-
-        <div class="system-node node-light">
-
-          <div class="node-icon">
-            ☀
-          </div>
-
-          <span>
-            LUZ
-          </span>
-
-        </div>
-
-
-        <div class="system-node node-motion">
-
-          <div class="node-icon">
-            ◉
-          </div>
-
-          <span>
-            MOVIMIENTO
-          </span>
-
-        </div>
-
-
-        <div class="system-node node-alert">
-
-          <div class="node-icon">
-            !
-          </div>
-
-          <span>
-            ALERTA
-          </span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </header>
-
-
-
-  <!-- =====================================================
-       INTRODUCCIÓN
-       ===================================================== -->
-
-  <section class="section intro-section">
-
-    <div class="section__inner intro-grid">
-
-
-      <div>
-
-        <p class="section-label">
-          01 / LA IDEA
-        </p>
-
-        <h2>
-          Iluminación que
-          <span>responde.</span>
-        </h2>
-
-      </div>
-
-
-      <div>
-
-        <p class="large-text">
-
-          IRTRAIlumina utiliza sensores para detectar
-          las condiciones del entorno y responder
-          automáticamente.
-
-        </p>
-
-        <p>
-
-          Cuando la iluminación ambiental disminuye o se
-          detecta movimiento, el sistema activa una luz LED RGB.
-          Además, un push button permite activar un buzzer,
-          funcionando como una representación de un botón
-          de alerta o emergencia.
-
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =====================================================
-       FUNCIONAMIENTO
-       ===================================================== -->
-
-  <section
-    class="section section--alt"
-    id="funcionamiento">
-
-    <div class="section__inner">
-
-
-      <p class="section-label">
-        02 / FUNCIONAMIENTO
-      </p>
-
-
-      <h2>
-        Tres entradas.
-        <span>Una respuesta.</span>
-      </h2>
-
-
-      <p class="section__intro">
-
-        El sistema analiza diferentes situaciones y
-        responde mediante iluminación o una señal sonora.
-
-      </p>
-
-
-
-      <div class="logic-grid">
-
-
-        <!-- LUZ -->
-
-        <div class="logic-card">
-
-          <div class="logic-number">
-            01
-          </div>
-
-
-          <div class="logic-icon">
-            ☀
-          </div>
-
-
-          <span class="logic-tag">
-            FOTORESISTENCIA
-          </span>
-
-
-          <h3>
-            Baja iluminación
-          </h3>
-
-
-          <p>
-
-            Cuando la cantidad de luz ambiental disminuye,
-            la fotoresistencia detecta el cambio.
-
-          </p>
-
-
-          <div class="logic-result">
-
-            <span>
-              RESPUESTA
-            </span>
-
-            <strong>
-              → LED RGB ON
-            </strong>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- MOVIMIENTO -->
-
-        <div class="logic-card">
-
-          <div class="logic-number">
-            02
-          </div>
-
-
-          <div class="logic-icon">
-            ◉
-          </div>
-
-
-          <span class="logic-tag">
-            SENSOR PIR
-          </span>
-
-
-          <h3>
-            Movimiento detectado
-          </h3>
-
-
-          <p>
-
-            El sensor PIR identifica movimiento
-            dentro del área monitoreada.
-
-          </p>
-
-
-          <div class="logic-result">
-
-            <span>
-              RESPUESTA
-            </span>
-
-            <strong>
-              → LED RGB ON
-            </strong>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- ALERTA -->
-
-        <div class="logic-card logic-card--alert">
-
-          <div class="logic-number">
-            03
-          </div>
-
-
-          <div class="logic-icon">
-            !
-          </div>
-
-
-          <span class="logic-tag">
-            PUSH BUTTON
-          </span>
-
-
-          <h3>
-            Activación de alerta
-          </h3>
-
-
-          <p>
-
-            Al presionar el botón, el sistema activa
-            el buzzer como señal sonora de alerta.
-
-          </p>
-
-
-          <div class="logic-result">
-
-            <span>
-              RESPUESTA
-            </span>
-
-            <strong>
-              → BUZZER ON
-            </strong>
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =====================================================
-       DIAGRAMA DE FLUJO
-       ===================================================== -->
-
-  <section class="section">
-
-    <div class="section__inner">
-
-
-      <p class="section-label">
-        03 / LÓGICA DEL SISTEMA
-      </p>
-
-
-      <h2>
-        Del entorno
-        <span>a la acción.</span>
-      </h2>
-
-
-      <p class="section__intro">
-
-        Cada sensor funciona como una entrada que genera
-        una respuesta específica del sistema.
-
-      </p>
-
-
-      <div class="flow-diagram">
-
-
-        <div class="flow-box">
-
-          <span>
-            ENTRADA
-          </span>
-
-          <strong>
-            Fotoresistencia
-          </strong>
-
-          <small>
-            Detecta baja iluminación
-          </small>
-
-        </div>
-
-
-        <div class="flow-arrow">
-          →
-        </div>
-
-
-        <div class="flow-box">
-
-          <span>
-            PROCESAMIENTO
-          </span>
-
-          <strong>
-            Circuito
-          </strong>
-
-          <small>
-            Analiza la condición
-          </small>
-
-        </div>
-
-
-        <div class="flow-arrow">
-          →
-        </div>
-
-
-        <div class="flow-box flow-box--result">
-
-          <span>
-            SALIDA
-          </span>
-
-          <strong>
-            LED RGB
-          </strong>
-
-          <small>
-            Iluminación automática
-          </small>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="secondary-flow">
-
-
-        <div>
-          <strong>
-            PIR
-          </strong>
-
-          <span>
-            Movimiento
-          </span>
-        </div>
-
-
-        <div class="arrow">
-          →
-        </div>
-
-
-        <div>
-          <strong>
-            LED RGB
-          </strong>
-
-          <span>
-            Iluminación
-          </span>
-        </div>
-
-
-        <div class="divider"></div>
-
-
-        <div class="alert-flow">
-
-          <strong>
-            PUSH BUTTON
-          </strong>
-
-          <span>
-            →
-          </span>
-
-          <strong>
-            BUZZER
-          </strong>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =====================================================
-       SIMULADOR VISUAL
-       ===================================================== -->
-
-  <section
-    class="section section--alt"
-    id="simulacion">
-
-    <div class="section__inner">
-
-
-      <p class="section-label">
-        04 / SISTEMA EN ACCIÓN
-      </p>
-
-
-      <h2>
-        Prueba la lógica
-        <span>del sistema.</span>
-      </h2>
-
-
-      <p class="section__intro">
-
-        Esta demostración representa el comportamiento
-        del circuito. Selecciona una situación para observar
-        la respuesta de IRTRAIlumina.
-
-      </p>
-
-
-      <div class="interactive-system">
-
-
-        <!-- PANEL -->
-
-        <div class="control-panel">
-
-          <div class="panel-header">
-
-            <span>
-              IRTRAILUMINA
-            </span>
-
-            <span class="online">
-              ● SISTEMA ACTIVO
-            </span>
-
-          </div>
-
-
-          <div class="sensor-control">
-
-            <label>
-              ILUMINACIÓN AMBIENTAL
-            </label>
-
-
-            <div class="control-buttons">
-
-              <button
-                class="demo-btn"
-                onclick="activateLight()">
-
-                🌙 Baja luz
-
-              </button>
-
-
-              <button
-                class="demo-btn"
-                onclick="deactivateLight()">
-
-                ☀ Luz normal
-
-              </button>
+                </div>
 
             </div>
 
-          </div>
 
+            <!-- VISUAL DEL SISTEMA -->
+            <div class="hero-visual">
 
-          <div class="sensor-control">
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
 
-            <label>
-              MOVIMIENTO
-            </label>
+                <div class="system-center">
+                    <div class="light-core"></div>
+                    <span>IRTRA</span>
+                    <small>ILUMINA</small>
+                </div>
 
+                <div class="system-node node-light">
+                    <span>☀</span>
+                    <small>Luz</small>
+                </div>
 
-            <div class="control-buttons">
+                <div class="system-node node-motion">
+                    <span>◉</span>
+                    <small>Movimiento</small>
+                </div>
 
-              <button
-                class="demo-btn"
-                onclick="activateMotion()">
-
-                ◉ Detectar movimiento
-
-              </button>
-
-            </div>
-
-          </div>
-
-
-          <div class="sensor-control">
-
-            <label>
-              BOTÓN DE ALERTA
-            </label>
-
-
-            <div class="control-buttons">
-
-              <button
-                class="demo-btn demo-btn--alert"
-                onclick="activateAlert()">
-
-                ! Activar alerta
-
-              </button>
+                <div class="system-node node-alert">
+                    <span>!</span>
+                    <small>Alerta</small>
+                </div>
 
             </div>
 
-          </div>
-
-        </div>
+        </section>
 
 
+        <!-- INTRO -->
+        <section class="section">
 
-        <!-- VISUAL -->
+            <div class="section-header">
 
-        <div class="system-display">
+                <span class="section-label">
+                    EL PROYECTO
+                </span>
 
+                <h2>
+                    Iluminación que responde.
+                </h2>
 
-          <div
-            class="display-light"
-            id="displayLight">
+                <p>
+                    IRTRAIlumina combina sensores y componentes electrónicos
+                    para crear un sistema capaz de reaccionar ante diferentes
+                    situaciones del entorno.
+                </p>
 
-            <div class="display-light__core">
             </div>
 
-          </div>
+        </section>
 
 
-          <div class="display-status">
+        <!-- FUNCIONAMIENTO -->
+        <section class="section section--alt" id="funcionamiento">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    FUNCIONAMIENTO
+                </span>
+
+                <h2>
+                    ¿Cómo funciona?
+                </h2>
+
+                <p>
+                    El sistema utiliza diferentes entradas para determinar
+                    cuándo debe activar la iluminación o generar una alerta.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ☀
+                    </div>
+
+                    <span class="feature-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Fotoresistor
+                    </h3>
+
+                    <p>
+                        Detecta la cantidad de luz presente en el ambiente.
+                        Cuando la iluminación disminuye, el sistema puede
+                        activar el LED RGB.
+                    </p>
+
+                    <div class="feature-line"></div>
+
+                    <span class="feature-status">
+                        DETECCIÓN DE LUZ
+                    </span>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        ◉
+                    </div>
+
+                    <span class="feature-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Sensor PIR
+                    </h3>
+
+                    <p>
+                        Detecta movimiento o presencia de personas y permite
+                        activar la iluminación cuando alguien se encuentra
+                        dentro del área.
+                    </p>
+
+                    <div class="feature-line"></div>
+
+                    <span class="feature-status">
+                        DETECCIÓN DE MOVIMIENTO
+                    </span>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">
+                        !
+                    </div>
+
+                    <span class="feature-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Push Button
+                    </h3>
+
+                    <p>
+                        Al presionar el botón se activa un buzzer, funcionando
+                        como una representación de un botón de alerta o
+                        emergencia.
+                    </p>
+
+                    <div class="feature-line"></div>
+
+                    <span class="feature-status">
+                        SISTEMA DE ALERTA
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FLUJO -->
+        <section class="section">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    LÓGICA DEL SISTEMA
+                </span>
+
+                <h2>
+                    De la detección a la respuesta.
+                </h2>
+
+                <p>
+                    Cada componente cumple una función específica dentro
+                    del circuito.
+                </p>
+
+            </div>
+
+
+            <div class="logic-flow">
+
+                <div class="logic-card">
+
+                    <div class="logic-icon">
+                        01
+                    </div>
+
+                    <h3>
+                        Detectar
+                    </h3>
+
+                    <p>
+                        Los sensores analizan las condiciones del entorno.
+                    </p>
+
+                </div>
+
+
+                <div class="logic-arrow">
+                    →
+                </div>
+
+
+                <div class="logic-card">
+
+                    <div class="logic-icon">
+                        02
+                    </div>
+
+                    <h3>
+                        Procesar
+                    </h3>
+
+                    <p>
+                        El sistema interpreta las señales recibidas.
+                    </p>
+
+                </div>
+
+
+                <div class="logic-arrow">
+                    →
+                </div>
+
+
+                <div class="logic-card">
+
+                    <div class="logic-icon">
+                        03
+                    </div>
+
+                    <h3>
+                        Responder
+                    </h3>
+
+                    <p>
+                        Se activa la iluminación o el sistema de alerta.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SIMULACIÓN VISUAL -->
+        <section class="section section--alt" id="simulacion">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    SISTEMA EN ACCIÓN
+                </span>
+
+                <h2>
+                    Prueba las funciones.
+                </h2>
+
+                <p>
+                    Esta demostración visual representa cómo responde el
+                    sistema ante las diferentes entradas.
+                </p>
+
+            </div>
+
+
+            <div class="interactive-system">
+
+                <div class="interactive-display">
+
+                    <div class="display-light" id="displayLight">
+                        <div class="display-light-inner"></div>
+                    </div>
+
+                    <h3 id="systemStatus">
+                        Sistema en espera
+                    </h3>
+
+                    <p id="systemMessage">
+                        No se ha detectado ninguna actividad.
+                    </p>
+
+                </div>
+
+
+                <div class="control-panel">
+
+                    <button
+                        class="control-button"
+                        onclick="activateLight()"
+                    >
+                        <span>☀</span>
+                        Detectar poca luz
+                    </button>
+
+
+                    <button
+                        class="control-button"
+                        onclick="activateMotion()"
+                    >
+                        <span>◉</span>
+                        Detectar movimiento
+                    </button>
+
+
+                    <button
+                        class="control-button control-button--alert"
+                        onclick="activateAlert()"
+                    >
+                        <span>!</span>
+                        Activar alerta
+                    </button>
+
+
+                    <button
+                        class="control-button control-button--reset"
+                        onclick="deactivateLight()"
+                    >
+                        Reiniciar sistema
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMPONENTES -->
+        <section class="section" id="componentes">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    HARDWARE
+                </span>
+
+                <h2>
+                    Componentes principales.
+                </h2>
+
+                <p>
+                    Estos elementos permiten que IRTRAIlumina pueda detectar
+                    su entorno y responder a diferentes situaciones.
+                </p>
+
+            </div>
+
+
+            <div class="components-grid">
+
+                <article class="component-card">
+
+                    <div class="component-number">
+                        01
+                    </div>
+
+                    <div class="component-icon">
+                        ☀
+                    </div>
+
+                    <h3>
+                        Fotoresistencia
+                    </h3>
+
+                    <p>
+                        Sensor que permite medir los cambios en la intensidad
+                        de la luz ambiental.
+                    </p>
+
+                </article>
+
+
+                <article class="component-card">
+
+                    <div class="component-number">
+                        02
+                    </div>
+
+                    <div class="component-icon">
+                        ◉
+                    </div>
+
+                    <h3>
+                        Sensor PIR
+                    </h3>
+
+                    <p>
+                        Detecta movimiento mediante cambios en la radiación
+                        infrarroja del entorno.
+                    </p>
+
+                </article>
+
+
+                <article class="component-card">
+
+                    <div class="component-number">
+                        03
+                    </div>
+
+                    <div class="component-icon">
+                        ●
+                    </div>
+
+                    <h3>
+                        LED RGB
+                    </h3>
+
+                    <p>
+                        Fuente de iluminación capaz de producir diferentes
+                        colores mediante sus canales RGB.
+                    </p>
+
+                </article>
+
+
+                <article class="component-card">
+
+                    <div class="component-number">
+                        04
+                    </div>
+
+                    <div class="component-icon">
+                        ○
+                    </div>
+
+                    <h3>
+                        Push Button
+                    </h3>
+
+                    <p>
+                        Permite enviar manualmente una señal al sistema para
+                        activar una función determinada.
+                    </p>
+
+                </article>
+
+
+                <article class="component-card">
+
+                    <div class="component-number">
+                        05
+                    </div>
+
+                    <div class="component-icon">
+                        ♪
+                    </div>
+
+                    <h3>
+                        Buzzer
+                    </h3>
+
+                    <p>
+                        Produce una señal sonora cuando recibe la orden
+                        correspondiente.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ODS -->
+        <section class="section section--alt" id="ods">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    IMPACTO
+                </span>
+
+                <h2>
+                    Tecnología con propósito.
+                </h2>
+
+                <p>
+                    El proyecto busca relacionar la innovación tecnológica
+                    con el uso responsable de los recursos.
+                </p>
+
+            </div>
+
+
+            <div class="ods-grid">
+
+                <article class="ods-card">
+
+                    <div class="ods-number">
+                        ODS 9
+                    </div>
+
+                    <h3>
+                        Industria, innovación e infraestructura
+                    </h3>
+
+                    <p>
+                        IRTRAIlumina utiliza tecnología y electrónica para
+                        desarrollar una solución innovadora orientada a
+                        mejorar un espacio recreativo.
+                    </p>
+
+                    <span>
+                        INNOVACIÓN
+                    </span>
+
+                </article>
+
+
+                <article class="ods-card">
+
+                    <div class="ods-number">
+                        ODS 13
+                    </div>
+
+                    <h3>
+                        Acción por el clima
+                    </h3>
+
+                    <p>
+                        El uso de sensores permite que la iluminación responda
+                        a las condiciones del entorno, evitando mantenerla
+                        activa innecesariamente.
+                    </p>
+
+                    <span>
+                        USO RESPONSABLE
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- EQUIPO -->
+        <section class="section" id="equipo">
+
+            <div class="section-header">
+
+                <span class="section-label">
+                    EQUIPO
+                </span>
+
+                <h2>
+                    Las personas detrás del proyecto.
+                </h2>
+
+                <p>
+                    IRTRAIlumina fue desarrollado como un proyecto
+                    colaborativo.
+                </p>
+
+            </div>
+
+
+            <div class="team-grid">
+
+                <article class="team-card">
+
+                    <div class="team-avatar">
+                        LR
+                    </div>
+
+                    <h3>
+                        Lilian Rodas
+                    </h3>
+
+                    <p>
+                        Integrante del equipo
+                    </p>
+
+                </article>
+
+
+                <article class="team-card">
+
+                    <div class="team-avatar">
+                        MC
+                    </div>
+
+                    <h3>
+                        Matias Coronado
+                    </h3>
+
+                    <p>
+                        Integrante del equipo
+                    </p>
+
+                </article>
+
+
+                <article class="team-card">
+
+                    <div class="team-avatar">
+                        KH
+                    </div>
+
+                    <h3>
+                        Katherine Hernandez
+                    </h3>
+
+                    <p>
+                        Integrante del equipo
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    IRTRA<span>Ilumina</span>
+                </div>
+
+                <p>
+                    Tecnología, innovación e iluminación inteligente.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#funcionamiento">
+                    Funcionamiento
+                </a>
+
+                <a href="#componentes">
+                    Componentes
+                </a>
+
+                <a href="#equipo">
+                    Equipo
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
 
             <span>
-              ESTADO DEL SISTEMA
+                © 2026 IRTRAIlumina
             </span>
 
-
-            <strong id="systemStatus">
-              ESPERANDO EVENTO
-            </strong>
-
-
-            <p id="systemMessage">
-
-              El sistema está monitoreando
-              el entorno.
-
-            </p>
-
-          </div>
-
-
-          <div
-            class="buzzer-status"
-            id="buzzerStatus">
-
-            BUZZER
             <span>
-              OFF
+                Proyecto académico
             </span>
 
-          </div>
-
         </div>
 
-      </div>
+    </footer>
 
-    </div>
 
-  </section>
+    <!-- JAVASCRIPT -->
+    <script>
 
+        const displayLight = document.getElementById("displayLight");
+        const systemStatus = document.getElementById("systemStatus");
+        const systemMessage = document.getElementById("systemMessage");
 
 
-  <!-- =====================================================
-       COMPONENTES
-       ===================================================== -->
+        function activateLight() {
 
-  <section
-    class="section"
-    id="componentes">
+            displayLight.classList.add("active");
 
-    <div class="section__inner">
+            systemStatus.textContent = "Iluminación activada";
 
+            systemMessage.textContent =
+                "La fotoresistencia detectó poca luz. El LED RGB se enciende.";
 
-      <p class="section-label">
-        05 / COMPONENTES
-      </p>
-
-
-      <h2>
-        Tecnología detrás
-        <span>del sistema.</span>
-      </h2>
-
-
-      <p class="section__intro">
-
-        Cada componente cumple una función específica
-        dentro del circuito.
-
-      </p>
-
-
-      <div class="components-grid">
-
-
-        <div class="component-card">
-
-          <div class="component-top">
-            <span>
-              SENSOR
-            </span>
-
-            <strong>
-              01
-            </strong>
-          </div>
-
-
-          <div class="component-symbol">
-            ☀
-          </div>
-
-
-          <h3>
-            Fotoresistencia
-          </h3>
-
-
-          <p>
-
-            Detecta la intensidad de luz ambiental
-            para determinar cuándo es necesario
-            activar la iluminación.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="component-card">
-
-          <div class="component-top">
-            <span>
-              SENSOR
-            </span>
-
-            <strong>
-              02
-            </strong>
-          </div>
-
-
-          <div class="component-symbol">
-            ◉
-          </div>
-
-
-          <h3>
-            Sensor PIR
-          </h3>
-
-
-          <p>
-
-            Detecta movimiento y permite activar
-            automáticamente la iluminación del sistema.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="component-card">
-
-          <div class="component-top">
-            <span>
-              SALIDA
-            </span>
-
-            <strong>
-              03
-            </strong>
-          </div>
-
-
-          <div class="component-symbol rgb-symbol">
-            RGB
-          </div>
-
-
-          <h3>
-            LED RGB
-          </h3>
-
-
-          <p>
-
-            Funciona como indicador luminoso y se
-            activa cuando el sistema detecta determinadas
-            condiciones.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="component-card">
-
-          <div class="component-top">
-            <span>
-              CONTROL
-            </span>
-
-            <strong>
-              04
-            </strong>
-          </div>
-
-
-          <div class="component-symbol">
-            ●
-          </div>
-
-
-          <h3>
-            Push Button
-          </h3>
-
-
-          <p>
-
-            Permite activar manualmente la señal
-            de alerta del sistema.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="component-card">
-
-          <div class="component-top">
-            <span>
-              ALERTA
-            </span>
-
-            <strong>
-              05
-            </strong>
-          </div>
-
-
-          <div class="component-symbol">
-            !
-          </div>
-
-
-          <h3>
-            Buzzer
-          </h3>
-
-
-          <p>
-
-            Produce una señal sonora cuando
-            se activa el botón de alerta.
-
-          </p>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =====================================================
-       TINKERCAD
-       ===================================================== -->
-
-  <section
-    class="section section--alt">
-
-    <div class="section__inner">
-
-
-      <p class="section-label">
-        06 / SIMULACIÓN REAL
-      </p>
-
-
-      <h2>
-        Circuito
-        <span>interactivo.</span>
-      </h2>
-
-
-      <p class="section__intro">
-
-        Explora la simulación del circuito y observa
-        cómo interactúan los sensores y actuadores.
-
-      </p>
-
-
-      <div class="tinkercad-frame">
-
-        <!--
-          REEMPLAZA "ejemplo" CON EL ID REAL
-          DE TU CIRCUITO DE TINKERCAD
-        -->
-
-        <iframe
-          width="100%"
-          height="520"
-          src="https://www.tinkercad.com/things/dSfwT8XXinL-fabulous-waasa-snicket"
-          frameborder="0"
-          marginwidth="0"
-          marginheight="0"
-          scrolling="no">
-        </iframe>
-
-      </div>
-
-
-      <p class="hint">
-
-        💡 Utiliza los controles de Tinkercad para
-        interactuar con el circuito.
-
-      </p>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =====================================================
-       ODS
-       ===================================================== -->
-
-  <section
-    class="section"
-    id="ods">
-
-    <div class="section__inner">
-
-
-      <p class="section-label">
-        07 / IMPACTO
-      </p>
-
-
-      <h2>
-        Innovación con
-        <span>propósito.</span>
-      </h2>
-
-
-      <p class="section__intro">
-
-        El proyecto busca demostrar cómo la automatización
-        puede utilizarse para crear soluciones más eficientes
-        y adaptadas a las necesidades de un entorno.
-
-      </p>
-
-
-      <div class="ods-grid">
-
-
-        <div
-          class="ods-card"
-          style="--ods-color:#FD6925;">
-
-          <div class="ods-number">
-            ODS 09
-          </div>
-
-
-          <h3>
-            Industria, Innovación
-            e Infraestructura
-          </h3>
-
-
-          <p>
-
-            IRTRAIlumina propone una solución tecnológica
-            basada en sensores y automatización para mejorar
-            el funcionamiento de un sistema de iluminación.
-
-          </p>
-
-        </div>
-
-
-
-        <div
-          class="ods-card"
-          style="--ods-color:#4C9F38;">
-
-          <div class="ods-number">
-            ODS 13
-          </div>
-
-
-          <h3>
-            Acción por el clima
-          </h3>
-
-
-          <p>
-
-            La activación de la iluminación únicamente
-            cuando se presentan determinadas condiciones
-            puede contribuir a evitar el uso innecesario
-            de energía.
-
-          </p>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =====================================================
-       EQUIPO
-       ===================================================== -->
-
-  <section
-    class="section section--alt"
-    id="equipo">
-
-    <div class="section__inner">
-
-
-      <p class="section-label">
-        08 / EQUIPO
-      </p>
-
-
-      <h2>
-        Las personas detrás
-        <span>de IRTRAIlumina.</span>
-      </h2>
-
-
-      <div class="team-grid">
-
-
-        <div class="team-card">
-
-          <div class="team-avatar">
-            LR
-          </div>
-
-          <h3>
-            Lilian Rodas
-          </h3>
-
-        </div>
-
-
-        <div class="team-card">
-
-          <div class="team-avatar">
-            MC
-          </div>
-
-          <h3>
-            Matias Coronado
-          </h3>
-
-        </div>
-
-
-        <div class="team-card">
-
-          <div class="team-avatar">
-            KH
-          </div>
-
-          <h3>
-            Katherine Hernandez
-          </h3>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
-
-  <footer class="footer">
-
-    <div class="footer__inner">
-
-
-      <div class="footer__brand">
-        IRTRA<span>Ilumina</span>
-      </div>
-
-
-      <p>
-        Sistema inteligente de iluminación
-        y alerta · IRTRA Petapa
-      </p>
-
-
-      <div class="footer__links">
-
-        <a href="#inicio">
-          Inicio ↑
-        </a>
-
-        <a href="#funcionamiento">
-          Funcionamiento
-        </a>
-
-        <a href="#simulacion">
-          Simulación
-        </a>
-
-      </div>
-
-
-      <div class="footer__bottom">
-
-        © 2026 · Proyecto de automatización
-
-      </div>
-
-
-    </div>
-
-  </footer>
-
-
-
-  <!-- =====================================================
-       JAVASCRIPT
-       ===================================================== -->
-
-  <script>
-
-
-    const light =
-      document.getElementById("displayLight");
-
-    const status =
-      document.getElementById("systemStatus");
-
-    const message =
-      document.getElementById("systemMessage");
-
-    const buzzer =
-      document.getElementById("buzzerStatus");
-
-
-    function activateLight() {
-
-      light.classList.add("active");
-
-      status.textContent =
-        "ILUMINACIÓN ACTIVADA";
-
-      message.textContent =
-        "La fotoresistencia detectó baja iluminación. El LED RGB se enciende.";
-
-      buzzer.classList.remove("active");
-
-    }
-
-
-    function deactivateLight() {
-
-      light.classList.remove("active");
-
-      status.textContent =
-        "MONITOREANDO";
-
-      message.textContent =
-        "La iluminación ambiental es suficiente. El sistema continúa monitoreando.";
-
-      buzzer.classList.remove("active");
-
-    }
-
-
-    function activateMotion() {
-
-      light.classList.add("active");
-
-      status.textContent =
-        "MOVIMIENTO DETECTADO";
-
-      message.textContent =
-        "El sensor PIR detectó movimiento. El LED RGB se activa.";
-
-      buzzer.classList.remove("active");
-
-    }
-
-
-    function activateAlert() {
-
-      buzzer.classList.add("active");
-
-      status.textContent =
-        "ALERTA ACTIVADA";
-
-      message.textContent =
-        "El push button fue presionado. El buzzer genera una señal sonora.";
-
-      light.classList.remove("active");
-
-    }
-
-
-
-    /* Animaciones al hacer scroll */
-
-    const revealElements =
-      document.querySelectorAll(
-        ".logic-card, .component-card, .ods-card, .team-card, .flow-box, .secondary-flow"
-      );
-
-
-    const observer =
-      new IntersectionObserver(
-
-        (entries) => {
-
-          entries.forEach(
-
-            (entry) => {
-
-              if (
-                entry.isIntersecting
-              ) {
-
-                entry.target.classList.add(
-                  "is-visible"
-                );
-
-                observer.unobserve(
-                  entry.target
-                );
-
-              }
-
-            }
-
-          );
-
-        },
-
-        {
-          threshold: .12
         }
 
-      );
+
+        function activateMotion() {
+
+            displayLight.classList.add("active");
+
+            systemStatus.textContent = "Movimiento detectado";
+
+            systemMessage.textContent =
+                "El sensor PIR detectó movimiento y activó la iluminación.";
+
+        }
 
 
-    revealElements.forEach(
+        function activateAlert() {
 
-      (element, index) => {
+            displayLight.classList.add("alert");
 
-        element.style.transitionDelay =
-          `${index * 70}ms`;
+            systemStatus.textContent = "¡Alerta activada!";
 
-        element.classList.add(
-          "reveal"
+            systemMessage.textContent =
+                "El botón fue presionado y el buzzer representa una señal de alerta.";
+
+        }
+
+
+        function deactivateLight() {
+
+            displayLight.classList.remove("active");
+            displayLight.classList.remove("alert");
+
+            systemStatus.textContent = "Sistema en espera";
+
+            systemMessage.textContent =
+                "No se ha detectado ninguna actividad.";
+
+        }
+
+
+        /* Animación de aparición */
+
+        const revealElements =
+            document.querySelectorAll(
+                ".section-header, .feature-card, .logic-card, .component-card, .ods-card, .team-card"
+            );
+
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("visible");
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.15
+            }
         );
 
-        observer.observe(
-          element
-        );
 
-      }
+        revealElements.forEach((element) => {
 
-    );
+            element.classList.add("reveal");
 
+            observer.observe(element);
 
-  </script>
+        });
 
+    </script>
 
 </body>
-
 </html>
