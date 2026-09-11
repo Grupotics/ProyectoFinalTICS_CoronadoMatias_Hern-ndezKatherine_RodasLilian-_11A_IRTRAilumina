@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>IRTRAIlumina | Proyecto Tecnológico</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- =====================================================
-     NAVBAR
-===================================================== -->
+<!-- ================= NAVBAR ================= -->
 
 <header class="navbar">
-
     <div class="nav-container">
 
         <a href="#inicio" class="logo">
@@ -27,7 +22,7 @@
             <a href="#inicio">Inicio</a>
             <a href="#funcionamiento">Funcionamiento</a>
             <a href="#componentes">Componentes</a>
-            <a href="#simulacion">Sistema en acción</a>
+            <a href="#simulacion">Simulación</a>
             <a href="#prototipo">Prototipo</a>
             <a href="#archivos">Documentación</a>
             <a href="#ods">ODS</a>
@@ -35,16 +30,12 @@
         </nav>
 
     </div>
-
 </header>
 
 
 <main>
 
-
-<!-- =====================================================
-     HERO
-===================================================== -->
+<!-- ================= HERO ================= -->
 
 <section id="inicio" class="hero">
 
@@ -76,7 +67,6 @@
 
         </div>
 
-
         <div class="hero-stats">
 
             <div class="stat">
@@ -99,8 +89,6 @@
     </div>
 
 
-    <!-- VISUAL DEL SISTEMA -->
-
     <div class="hero-visual">
 
         <div class="glow"></div>
@@ -121,19 +109,15 @@
 
             </div>
 
-
             <div class="system-node node-light">
 
                 <div class="node-icon">
                     ☼
                 </div>
 
-                <span>
-                    Luz
-                </span>
+                <span>Luz</span>
 
             </div>
-
 
             <div class="system-node node-motion">
 
@@ -141,12 +125,9 @@
                     ◉
                 </div>
 
-                <span>
-                    Movimiento
-                </span>
+                <span>Movimiento</span>
 
             </div>
-
 
             <div class="system-node node-alert">
 
@@ -154,9 +135,7 @@
                     !
                 </div>
 
-                <span>
-                    Alerta
-                </span>
+                <span>Alerta</span>
 
             </div>
 
@@ -167,10 +146,7 @@
 </section>
 
 
-
-<!-- =====================================================
-     INTRODUCCIÓN
-===================================================== -->
+<!-- ================= INTRO ================= -->
 
 <section class="section intro">
 
@@ -195,10 +171,7 @@
 </section>
 
 
-
-<!-- =====================================================
-     FUNCIONAMIENTO
-===================================================== -->
+<!-- ================= FUNCIONAMIENTO ================= -->
 
 <section id="funcionamiento" class="section">
 
@@ -221,7 +194,6 @@
 
 
     <div class="feature-grid">
-
 
         <article class="feature-card">
 
@@ -291,8 +263,6 @@
     </div>
 
 
-    <!-- FLUJO DEL SISTEMA -->
-
     <div class="logic">
 
         <div class="logic-card">
@@ -360,12 +330,9 @@
 </section>
 
 
+<!-- ================= SIMULACIÓN ================= -->
 
-<!-- =====================================================
-     SISTEMA EN ACCIÓN
-===================================================== -->
-
-<section id="simulacion" class="section section-dark">
+<section id="simulacion" class="section section--alt">
 
     <div class="section-heading">
 
@@ -387,7 +354,6 @@
 
     <div class="interactive-system">
 
-
         <div class="interactive-top">
 
             <div>
@@ -401,7 +367,6 @@
                 </h3>
 
             </div>
-
 
             <div
                 id="statusLight"
@@ -452,10 +417,7 @@
 </section>
 
 
-
-<!-- =====================================================
-     COMPONENTES
-===================================================== -->
+<!-- ================= COMPONENTES ================= -->
 
 <section id="componentes" class="section">
 
@@ -477,7 +439,6 @@
 
 
     <div class="components-grid">
-
 
         <article class="component-card">
 
@@ -587,12 +548,11 @@
 </section>
 
 
-
 <!-- =====================================================
-     PROTOTIPO FÍSICO
+     PROTOTIPO FÍSICO Y CONEXIONES
 ===================================================== -->
 
-<section id="prototipo" class="section section-dark">
+<section id="prototipo" class="section">
 
     <div class="section-heading">
 
@@ -615,9 +575,9 @@
     <div class="media-grid">
 
 
-        <!-- ================= VIDEO ================= -->
+        <!-- VIDEO -->
 
-        <article class="media-card">
+        <div class="media-card">
 
             <div class="media-header">
 
@@ -644,32 +604,27 @@
             </p>
 
 
-            <div class="media-wrapper">
+            <video
+                controls
+                class="media-element"
+                poster="imagen_2026-09-10_074805604.png"
+            >
 
-                <video
-                    controls
-                    class="media-element"
-                    poster="imagen_2026-09-10_074805604.png"
+                <source
+                    src="1789064005943_original-53578ae1-0f87-4e25-bda5-5bc3c1f22691.mp4"
+                    type="video/mp4"
                 >
 
-                    <source
-                        src="1789064005943_original-53578ae1-0f87-4e25-bda5-5bc3c1f22691.mp4"
-                        type="video/mp4"
-                    >
+                Tu navegador no soporta el elemento de video.
 
-                    Tu navegador no soporta el elemento de video.
+            </video>
 
-                </video>
-
-            </div>
-
-        </article>
+        </div>
 
 
+        <!-- IMAGEN -->
 
-        <!-- ================= CIRCUITO ================= -->
-
-        <article class="media-card">
+        <div class="media-card">
 
             <div class="media-header">
 
@@ -698,29 +653,24 @@
             </p>
 
 
-            <div class="image-wrapper">
+            <img
+                src="imagen_2026-09-10_074805604.png"
+                alt="Diagrama del circuito IRTRAIlumina"
+                class="media-element img-zoom"
+            >
 
-                <img
-                    src="imagen_2026-09-10_074805604.png"
-                    alt="Diagrama del circuito IRTRAIlumina"
-                    class="media-element circuit-image"
-                >
-
-            </div>
-
-        </article>
+        </div>
 
     </div>
 
 </section>
 
 
-
 <!-- =====================================================
      DOCUMENTACIÓN
 ===================================================== -->
 
-<section id="archivos" class="section">
+<section id="archivos" class="section section--alt">
 
     <div class="section-heading">
 
@@ -742,11 +692,26 @@
 
     <div class="files-grid">
 
-
-        <article class="file-card">
+        <div class="file-card highlight-card">
 
             <div class="file-icon">
-                PDF
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+
+                    <path
+                        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
+                    </path>
+
+                    <polyline points="14 2 14 8 20 8">
+                    </polyline>
+
+                </svg>
+
             </div>
 
 
@@ -776,19 +741,16 @@
                 Abrir PDF
             </a>
 
-        </article>
+        </div>
 
     </div>
 
 </section>
 
 
+<!-- ================= ODS ================= -->
 
-<!-- =====================================================
-     ODS
-===================================================== -->
-
-<section id="ods" class="section section-dark">
+<section id="ods" class="section">
 
     <div class="section-heading">
 
@@ -809,7 +771,6 @@
 
 
     <div class="ods-grid">
-
 
         <article class="ods-card">
 
@@ -853,12 +814,9 @@
 </section>
 
 
+<!-- ================= EQUIPO ================= -->
 
-<!-- =====================================================
-     EQUIPO
-===================================================== -->
-
-<section id="equipo" class="section">
+<section id="equipo" class="section section--alt">
 
     <div class="section-heading">
 
@@ -874,7 +832,6 @@
 
 
     <div class="team-grid">
-
 
         <article class="team-card">
 
@@ -930,14 +887,10 @@
 
 </section>
 
-
 </main>
 
 
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
@@ -965,10 +918,7 @@
 </footer>
 
 
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
+<!-- ================= JAVASCRIPT ================= -->
 
 <script>
 
@@ -1046,7 +996,6 @@ function deactivateSystem() {
 }
 
 </script>
-
 
 </body>
 </html>
